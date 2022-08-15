@@ -1,6 +1,5 @@
 @import 'base/minireset';
-
-$primary-background-color: #D1E5E1;
+@import "base/variables";
 
 body {
   display: flex;
