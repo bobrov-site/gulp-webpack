@@ -3,6 +3,7 @@
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     .wrapper {
       header {
         display: flex;
@@ -43,6 +44,21 @@
           .show {
             display: list-item;
           }
+        }
+      }
+      .hero-screen-content {
+        margin-top: 109px;
+        .hero-screen-label {
+          img {
+            position: absolute;
+            left: 0;
+          }
+        }
+        .hero-screen-title {
+
+        }
+        .hero-screen-description {
+
         }
       }
     }
