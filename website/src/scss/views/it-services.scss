@@ -17,7 +17,15 @@
             border-radius: 50px;
             padding: 9px 11px;
             .nav-item {
-
+              @include font($montserrat,$semibold, $nav, $nav-lh, $primary);
+              opacity: 0.1;
+              padding: 18px 55px;
+              border-radius: 50px;
+            }
+            .active {
+              color: $white;
+              opacity: 1;
+              background-color: $primary;
             }
           }
         }
