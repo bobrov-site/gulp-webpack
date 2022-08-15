@@ -3,7 +3,20 @@
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    .hero-screen-label {
+      margin-top: 109px;
+      img {
+        margin-bottom: 23px;
+      }
+    }
+    .hero-screen-provide {
+      padding: 37px 74px;
+      margin-right: 46px;
+      margin-left: 46px;
+      @include font($montserrat,$medium,$text,$text-lh,$black);
+      background: rgba(245, 245, 245, 0.5);
+      border-radius: 50px;
+    }
     .wrapper {
       header {
         display: flex;
@@ -47,18 +60,13 @@
         }
       }
       .hero-screen-content {
-        margin-top: 109px;
-        .hero-screen-label {
-          img {
-            position: absolute;
-            left: 0;
-          }
-        }
         .hero-screen-title {
-
+          @include font($orbitron,$bold,$h1,$h1-lh,$white);
+          margin-bottom: 23px;
         }
         .hero-screen-description {
-
+          @include font($montserrat,$medium,$text,$text-lh,$white);
+          margin-bottom: 78px;
         }
       }
     }
