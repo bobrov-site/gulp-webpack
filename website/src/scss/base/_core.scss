@@ -1,8 +1,14 @@
-body {
+header {
   padding-top: 27px;
+}
+
+footer {
   padding-bottom: 27px;
 }
+
 .wrapper {
   max-width: 1680px;
   margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 120px;
 }
