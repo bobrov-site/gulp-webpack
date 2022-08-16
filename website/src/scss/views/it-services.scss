@@ -78,8 +78,10 @@
     }
   }
   main {
-    .wrapper {
+    .position-relative {
       position: relative;
+    }
+    .wrapper {
       .bg {
         .leaves {
           top: -93px;
@@ -106,6 +108,11 @@
       }
       .github {
         margin-bottom: 156px;
+      }
+      .company-information {
+        .info-group-list {
+          margin-bottom: 28px;
+        }
       }
       .info {
         &-title {
@@ -137,6 +144,20 @@
         &-item-link:hover {
           text-decoration: none;
         }
+      }
+    }
+  }
+  main {
+    position: relative;
+    .footer {
+      .logo-bg {
+        right: -300px;
+        bottom: 0;
+        position: absolute;
+        width: 974px;
+        height: 1174px;
+        background: url("../img/logo-bg.png") no-repeat;
+        background-size: contain;
       }
     }
   }
