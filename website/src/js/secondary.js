@@ -8,7 +8,7 @@ const eng = child[1];
 let isShow = false;
 
 switcher.addEventListener('click', (event) => {
-  if (isShow === false) {
+  if (!isShow) {
     event.preventDefault();
     eng.classList.add('show');
     eng.style.display = 'list-item';
