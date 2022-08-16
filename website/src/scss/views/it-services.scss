@@ -98,10 +98,22 @@
           filter: blur(500px);
         }
       }
+      .services-offerings {
+        margin-bottom: 102px;
+      }
+      .reference-projects {
+        margin-bottom: 93px;
+      }
+      .github {
+        margin-bottom: 156px;
+      }
       .info {
         &-title {
           @include font($orbitron,$bold,$h2,$h2-lh,$black);
           margin-bottom: 61px;
+        }
+        &-text {
+          @include font($montserrat, $medium, $text, $text-lh, $black);
         }
         &-group-list {
           list-style-type: '-';
@@ -115,6 +127,15 @@
           span {
             @include font($montserrat, $medium, $text, $text-lh, $black);
           }
+        }
+        &-item:last-child {
+          margin-bottom: 0;
+        }
+        &-item-link {
+          @include link;
+        }
+        &-item-link:hover {
+          text-decoration: none;
         }
       }
     }

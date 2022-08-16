@@ -38,3 +38,9 @@ $nav-lh: 27px;
   line-height: $line-height-variable;
   color: $color-variable;
 }
+
+@mixin link {
+  cursor: pointer;
+  color: $primary;
+  text-decoration: underline;
+}
