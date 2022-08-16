@@ -26,12 +26,22 @@
       header {
         display: flex;
         justify-content: space-between;
+        .logo {
+          img {
+            @media screen and (max-width: 1199px) {
+              width: 230px;
+            }
+          }
+        }
         .nav {
           &-group-list {
             display: flex;
             background-color: rgba(245, 245, 245, 0.5);
             border-radius: 50px;
             padding: 9px 11px;
+            @media screen and (max-width: 1199px) {
+              padding: 4px 5px;
+            }
           }
           &-item {
             @include font($montserrat,$semibold, $nav, $nav-lh, $primary);
@@ -39,6 +49,11 @@
             padding: 18px 55px;
             border-radius: 50px;
             text-transform: uppercase;
+            @media screen and (max-width: 1199px) {
+              font-size: 12px;
+              line-height: 14.63px;
+              padding: 8px 21px;
+            }
           }
           .active {
             color: $white;
@@ -50,7 +65,18 @@
           &-group-list {
             padding: 16px 15px;
             border-radius: 50px;
-            background-color: rgba(245, 245, 245, 0.5);;
+            background-color: rgba(245, 245, 245, 0.5);
+            @media screen and (max-width: 1199px) {
+              padding: 6px;
+            }
+          }
+          &-item {
+            img {
+              display: block;
+              @media screen and (max-width: 1199px) {
+                width: 25px;
+              }
+            }
           }
           &-item:last-child {
             display: none;
