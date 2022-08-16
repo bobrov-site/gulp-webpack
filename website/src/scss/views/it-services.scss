@@ -147,9 +147,10 @@
   }
   main {
     position: relative;
+    overflow-x: hidden !important;
     .footer {
       .logo-bg {
-        right: -300px;
+        right: -30px;
         bottom: 0;
         position: absolute;
         width: 974px;
