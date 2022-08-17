@@ -11,17 +11,27 @@
     @media screen and (max-width: 1199px) {
       margin-bottom: 85px;
     }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
     .hero-screen-label {
       margin-top: 109px;
       margin-bottom: 23px;
       @media screen and (max-width: 1199px) {
         margin-bottom: 19px;
       }
+      @media screen and (max-width: 767px) {
+        margin-top: 50px;
+        margin-bottom: 17px;
+      }
       img {
         @media screen and (max-width: 1199px) {
           width: 720px;
           position: relative;
           left: 0;
+        }
+        @media screen and (max-width: 767px) {
+          width: 320px;
         }
       }
     }
@@ -37,15 +47,36 @@
         font-size: 18px;
         line-height: 30px;
       }
+      @media screen and (max-width: 767px) {
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 16px 9px;
+        font-size: 12px;
+        line-height: 22px;
+        border-radius: 30px;
+      }
     }
     .wrapper {
       header {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 767px) {
+          align-items: center;
+        }
         .logo {
-          img {
-            @media screen and (max-width: 1199px) {
-              width: 230px;
+          .logo-desktop {
+            @media screen and (max-width: 767px) {
+              display: none;
+            }
+            img {
+              @media screen and (max-width: 1199px) {
+                width: 230px;
+              }
+            }
+          }
+          .logo-mobile {
+            @media (min-width: 768px) {
+              display: none;
             }
           }
         }
@@ -58,6 +89,9 @@
             @media screen and (max-width: 1199px) {
               padding: 4px 5px;
             }
+            @media screen and (max-width: 767px) {
+              padding: 3px 4px;
+            }
           }
           &-item {
             @include font($montserrat,$semibold, $nav, $nav-lh, $primary);
@@ -69,6 +103,11 @@
               font-size: 12px;
               line-height: 14.63px;
               padding: 8px 21px;
+            }
+            @media screen and (max-width: 767px) {
+              padding: 6px 15px;
+              font-size: 10px;
+              line-height: 12px;
             }
           }
           .active {
@@ -85,6 +124,9 @@
             @media screen and (max-width: 1199px) {
               padding: 6px;
             }
+            @media screen and (max-width: 767px) {
+              padding: 5px;
+            }
           }
           &-item {
             img {
@@ -92,10 +134,23 @@
               @media screen and (max-width: 1199px) {
                 width: 25px;
               }
+              @media screen and (max-width: 767px) {
+                width: 21px;
+              }
             }
           }
           &-item:last-child {
             display: none;
+          }
+          &-icon-mobile {
+            @media (min-width: 768px) {
+              display: none !important;
+            }
+          }
+          &-icon-desktop {
+            @media screen and (max-width: 767px) {
+              display: none !important;
+            }
           }
           .show {
             transition: 0.3s ease-in;
@@ -114,6 +169,11 @@
             line-height: 112.86px;
             margin-bottom: 19px;
           }
+          @media screen and (max-width: 767px) {
+            font-size: 43px;
+            line-height: 53.92px;
+            margin-bottom: 11px;
+          }
         }
         .hero-screen-description {
           max-width: 803px;
@@ -123,6 +183,12 @@
             font-size: 18px;
             line-height: 35px;
             max-width: 338px;
+          }
+          @media screen and (max-width: 767px) {
+            font-size: 12px;
+            line-height: 20px;
+            max-width: 243px;
+            margin-bottom: 19px;
           }
         }
       }
@@ -144,6 +210,18 @@
           @media screen and (max-width: 1399px) {
             top: -130px;
           }
+          @media screen and (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+            max-width: 300px;
+            max-height: 300px;
+            background-size: 100% 100%;
+            top: 0;
+          }
+          @media screen and (max-width: 505px) {
+            max-width: 200px;
+            max-height: 200px;
+          }
         }
         .radial-circle {
           position: absolute;
@@ -158,6 +236,12 @@
             filter: blur(200px);
             top: 300px;
           }
+          @media screen and (max-width: 767px) {
+            top: 0;
+            width: 122px;
+            height: 122px;
+            filter: blur(200px);
+          }
         }
       }
       .services-offerings {
@@ -165,17 +249,26 @@
         @media screen and (max-width: 1199px) {
           margin-bottom: 85px;
         }
+        @media screen and (max-width: 767px) {
+          margin-bottom: 60px;
+        }
       }
       .reference-projects {
         margin-bottom: 93px;
         @media screen and (max-width: 1199px) {
           margin-bottom: 85px;
         }
+        @media screen and (max-width: 767px) {
+          margin-bottom: 60px;
+        }
       }
       .github {
         margin-bottom: 156px;
         @media screen and (max-width: 1199px) {
           margin-bottom: 85px;
+        }
+        @media screen and (max-width: 767px) {
+          margin-bottom: 60px;
         }
       }
       .company-information {
@@ -192,6 +285,11 @@
             line-height: 37.62px;
             margin-bottom: 40px;
           }
+          @media screen and (max-width: 767px) {
+            font-size: 20px;
+            line-height: 25.08px;
+            margin-bottom: 25px;
+          }
         }
         &-text {
           @include font($montserrat, $medium, $text, $text-lh, $black);
@@ -199,11 +297,19 @@
             font-size: 18px;
             line-height: 35px;
           }
+          @media screen and (max-width: 767px) {
+            font-size: 12px;
+            line-height: 30px;
+            max-width: 338px;
+          }
         }
         &-group-list {
           list-style-type: '-';
           font-size: $text;
           margin-left: 11px;
+        }
+        &-item::marker {
+          font-size: 12px;
         }
         &-item {
           margin-bottom: 30px;
@@ -218,6 +324,11 @@
               font-size: 18px;
               line-height: 35px;
             }
+            @media screen and (max-width: 767px) {
+              display: block;
+              font-size: 12px;
+              line-height: 30px;
+            }
           }
         }
         &-item:last-child {
@@ -225,6 +336,14 @@
         }
         &-item-link {
           @include link;
+          @media screen and (max-width: 767px) {
+            display: block;
+          }
+        }
+        .phone {
+          @media screen and (max-width: 767px) {
+            display: unset;
+          }
         }
         &-item-link:hover {
           text-decoration: none;
