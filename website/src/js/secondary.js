@@ -1,3 +1,5 @@
+// script for lang switching
+
 const switcher = document.getElementById('lang-switch');
 const langLinks = document.querySelectorAll('.lang-link');
 
