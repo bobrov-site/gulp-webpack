@@ -1,8 +1,8 @@
 const switcher = document.getElementById('lang-switch');
+const langLinks = document.querySelectorAll('.lang-link');
+
 
 const child = switcher.children;
-
-const sweden = child[0];
 const eng = child[1];
 
 let isShow = false;
@@ -12,6 +12,10 @@ switcher.addEventListener('click', (event) => {
     event.preventDefault();
     eng.classList.add('show');
     eng.style.display = 'list-item';
+    eng.style.marginTop = '10px';
+    for (let link of langLinks) {
+      link.style.pointerEvents = 'auto';
+    }
     isShow = true;
   }
   else {

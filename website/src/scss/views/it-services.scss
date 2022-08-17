@@ -129,13 +129,16 @@
             }
           }
           &-item {
-            img {
-              display: block;
-              @media screen and (max-width: 1199px) {
-                width: 25px;
-              }
-              @media screen and (max-width: 767px) {
-                width: 21px;
+            .lang-link {
+              pointer-events: none;
+              img {
+                display: block;
+                @media screen and (max-width: 1199px) {
+                  width: 25px;
+                }
+                @media screen and (max-width: 767px) {
+                  width: 21px;
+                }
               }
             }
           }
