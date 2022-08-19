@@ -125,6 +125,10 @@
             opacity: 1;
             background-color: $primary;
           }
+          &-link {
+            text-decoration: none;
+            color: unset;
+          }
         }
         .lang {
           cursor: pointer;
