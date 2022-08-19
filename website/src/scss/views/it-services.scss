@@ -59,7 +59,9 @@
     .wrapper {
       header {
         display: flex;
-        justify-content: space-between;
+        //justify-content: space-between;
+        justify-content: flex-start;
+        position: relative;
         @media screen and (max-width: 767px) {
           align-items: center;
         }
@@ -81,6 +83,14 @@
           }
         }
         .nav {
+          margin: auto;
+          align-self: center;
+          @media screen and (max-width: 1399px) {
+            margin: 0 0 0 10px;
+          }
+          @media screen and (max-width: 1336px) {
+            margin: auto;
+          }
           &-group-list {
             display: flex;
             background-color: rgba(245, 245, 245, 0.5);
@@ -118,6 +128,8 @@
         }
         .lang {
           cursor: pointer;
+          position: absolute;
+          right: 0;
           &-group-list {
             padding: 16px 15px;
             border-radius: 50px;
