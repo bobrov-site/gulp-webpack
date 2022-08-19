@@ -196,7 +196,7 @@
           }
         }
         .hero-screen-description {
-          max-width: 803px;
+          max-width: 500px;
           @include font($montserrat,$medium,$text,$text-lh,$white);
           margin-bottom: 78px;
           @media screen and (max-width: 1199px) {
