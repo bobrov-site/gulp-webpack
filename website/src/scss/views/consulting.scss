@@ -248,7 +248,7 @@
           right: 0;
           width: 613px;
           height: 613px;
-          background: rgba(235, 92, 40, 0.3);
+          background: rgba(94, 133, 65, 0.3);
           filter: blur(500px);
           @media screen and (max-width: 1199px) {
             width: 160px;
@@ -264,8 +264,8 @@
           }
         }
       }
-      .services-offerings {
-        margin-bottom: 102px;
+      .recent-roles {
+        margin-bottom: 93px;
         @media screen and (max-width: 1199px) {
           margin-bottom: 85px;
         }
@@ -355,7 +355,7 @@
           margin-bottom: 0;
         }
         &-item-link {
-          @include link;
+          @include linkGreen;
           @media screen and (max-width: 767px) {
             display: block;
           }
@@ -376,12 +376,12 @@
     overflow-x: hidden !important;
     .footer {
       .logo-bg {
-        right: -30px;
+        right: -60px;
         bottom: 0;
         position: absolute;
-        width: 974px;
-        height: 1174px;
-        background: url("../img/logo-bg.png") no-repeat;
+        width: 900px;
+        height: 908px;
+        background: url("../img/leaves-bg.png") no-repeat;
         background-size: contain;
         @media screen and (max-width: 1659px) {
           width: 100%;
@@ -389,10 +389,6 @@
           max-height: 600px;
           background-size: 100% 100%;
           bottom: 100px;
-        }
-        @media screen and (max-width: 1500px) {
-          max-width: 400px;
-          max-height: 400px;
         }
         @media screen and (max-width: 1199px) {
           max-width: 650px;

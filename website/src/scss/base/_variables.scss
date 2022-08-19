@@ -44,3 +44,9 @@ $nav-lh: 27px;
   color: $primary;
   text-decoration: underline;
 }
+
+@mixin linkGreen {
+  cursor: pointer;
+  color: $secondary;
+  text-decoration: underline;
+}
