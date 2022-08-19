@@ -1,4 +1,5 @@
 module.exports = {
   scripts: './website/src/js/scripts.js',
-  secondary: './website/src/js/secondary.js',
+  switchToSwe: './website/src/js/switch-to-swe.js',
+  switchToEng: './website/src/js/switch-to-eng.js',
 };
