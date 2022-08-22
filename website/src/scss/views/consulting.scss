@@ -246,24 +246,34 @@
         }
         .radial-circle {
           position: absolute;
+          background: url("../img/radial-circle-green.png") no-repeat;
+          width: 560px;
+          height: 550px;
           right: 0;
-          width: 613px;
-          height: 613px;
-          background: rgba(94, 133, 65, 0.3);
-          filter: blur(500px);
-          @media screen and (max-width: 1199px) {
-            width: 160px;
-            height: 160px;
-            filter: blur(200px);
-            top: 300px;
-          }
           @media screen and (max-width: 767px) {
-            top: 0;
-            width: 122px;
-            height: 122px;
-            filter: blur(200px);
+            top: 26px;
           }
         }
+        //.radial-circle {
+        //  position: absolute;
+        //  right: 0;
+        //  width: 613px;
+        //  height: 613px;
+        //  background: rgba(94, 133, 65, 0.3);
+        //  filter: blur(500px);
+        //  @media screen and (max-width: 1199px) {
+        //    width: 160px;
+        //    height: 160px;
+        //    filter: blur(200px);
+        //    top: 300px;
+        //  }
+        //  @media screen and (max-width: 767px) {
+        //    top: 0;
+        //    width: 122px;
+        //    height: 122px;
+        //    filter: blur(200px);
+        //  }
+        //}
       }
       .recent-roles {
         margin-bottom: 93px;

@@ -246,24 +246,35 @@
         }
         .radial-circle {
           position: absolute;
+          background: url("../img/radial-circle.png") no-repeat;
+          width: 560px;
+          height: 550px;
           right: 0;
-          width: 613px;
-          height: 613px;
-          background: rgba(235, 92, 40, 0.3);
-          filter: blur(500px);
-          @media screen and (max-width: 1199px) {
-            width: 160px;
-            height: 160px;
-            filter: blur(200px);
-            top: 300px;
-          }
           @media screen and (max-width: 767px) {
-            top: 0;
-            width: 122px;
-            height: 122px;
-            filter: blur(200px);
+            top: -75px;
+            right: -238px;
           }
         }
+        //.radial-circle {
+        //  position: absolute;
+        //  right: 0;
+        //  width: 613px;
+        //  height: 613px;
+        //  background: rgba(235, 92, 40, 0.3);
+        //  filter: blur(500px);
+        //  @media screen and (max-width: 1199px) {
+        //    width: 160px;
+        //    height: 160px;
+        //    filter: blur(200px);
+        //    top: 300px;
+        //  }
+        //  @media screen and (max-width: 767px) {
+        //    top: 0;
+        //    width: 122px;
+        //    height: 122px;
+        //    filter: blur(200px);
+        //  }
+        //}
       }
       .services-offerings {
         margin-bottom: 102px;
