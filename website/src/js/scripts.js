@@ -1,5 +1,3 @@
-import primary from './primary';
-
 class Person {
   constructor(name) {
     this.name = name;
@@ -12,5 +10,3 @@ class Person {
 }
 
 const harry = new Person('Harman Manchanda');
-console.log(harry.hello());
-console.log(primary());

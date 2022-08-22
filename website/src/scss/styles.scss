@@ -1,11 +1,10 @@
 @import 'base/minireset';
+@import "base/variables";
+@import "base/core";
 
-$primary-background-color: #D1E5E1;
+@import "views/it-services";
+@import "views/consulting";
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   height: 100vH;
 }
