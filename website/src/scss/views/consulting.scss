@@ -397,9 +397,10 @@
           transform: rotate(342deg);
           right: -130px;
         }
-        @media screen and (max-width: 920px) {
+        @media screen and (max-width: 767px) {
           max-width: 450px;
           max-height: 450px;
+          right: -50px;
         }
       }
     }
